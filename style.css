@@ -17,6 +17,7 @@ header{
     
 
 }
+
 #descricao{
     text-align: center;
     background-color: #514988;
@@ -27,12 +28,49 @@ header{
     padding-bottom: 30px;
     height: 400px;
 }
+
 #countdown-video{
     background-color: white;
 }
+
+#countdown{
+    display: grid;
+    grid-auto-flow: column;     
+    margin-left: 20px;
+}
+
+.contador{
+    color: rgba(81, 73, 136, 1);
+    font-size: 20px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contador h1{
+    margin-bottom: 0;
+}
+
+.contador p{
+    margin: 0;
+}
+
+#texto-countdown{
+    color: rgba(227, 56, 129, 1);
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+#texto-countdown p{
+    margin: 8px 0px 12px 0;
+}
+
 #video{
+    margin-top: 0;
     margin-left: 10px;
-    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
 }
 #sec2{
     background-color: white;
