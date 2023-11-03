@@ -15,7 +15,16 @@
         <div id="descricao">
             <h1 id="titulo">REVIVA O ÉPICO</h1>
             <p id="data"><strong>DE 01 A 04 DE DEZEMBRO</strong></p>
-            <p id="texto">Você consegue sentir? É aquela sensação de finalmente poder falar em voz alta: "estamos em casa". Sim, em dezembro de 2022, teremos a volta da CCXP física. Mas não será qualquer CCXP, vai ser a maior de todos os tempos. Prepare-se para visitar seus universos favoritos, explorar o Artists' Valley, se emocionar nos auditórios e encontrar aventuras épicas a cada passo pelos nossos corredores.</p>
+            <p id="texto">Você consegue sentir? É aquela sensação de <br>
+                finalmente poder falar em voz alta: "estamos <br>
+                em casa". Sim, em dezembro de 2022, <br>
+                teremos a volta da CCXP física. Mas não será <br>
+                qualquer CCXP, vai ser a maior de todos os <br>
+                tempos. Prepare-se para visitar seus <br>
+                universos favoritos, explorar o Artists' Valley,<br>
+                se emocionar nos auditórios e encontrar <br>
+                aventuras épicas a cada passo pelos nossos <br>
+                 corredores.</p>
         </div>
         <div id="countdown-video">
             <div id="countdown">
@@ -48,21 +57,22 @@
     </section>
     <section id="sec2">
         <div>
-            <div>
+            <div id="compre">
                 <strong>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</strong>
             </div>
-            <div>
-                <img src="./img/qui.svg" alt="">
-                <img src="./img/sex.svg" alt="">
-                <img src="./img/sab.svg" alt="">
-                <img src="./img/dom.svg" alt="">
+            <div id="ingressos">
+                <img src="./img/qui.svg" onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" id="quinta" alt="">
+                <img src="./img/sex.svg" onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')" id="sexta" alt="">
+                <img src="./img/sab.svg" onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')" id="sabado" alt="">
+                <img src="./img/dom.svg" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')" id="domingo" alt="">
             </div>
         </div>
-        <div id="botao-ingresso">
-            <button>GARANTA O SEU!</button>
+        <div class="botao">
+            <button id="botao-ingresso">GARANTA O SEU!</button>
         </div>
     </section>
 
     <script src="index.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
