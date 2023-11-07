@@ -61,14 +61,29 @@
                 <strong>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</strong>
             </div>
             <div id="ingressos">
-                <img src="./img/qui.svg" onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" id="quinta" alt="">
-                <img src="./img/sex.svg" onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')" id="sexta" alt="">
-                <img src="./img/sab.svg" onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')" id="sabado" alt="">
-                <img src="./img/dom.svg" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')" id="domingo" alt="">
+                <img class="cards-ingressos" src="./img/qui.svg" 
+                onclick="selectCard('#quinta')"
+                onmouseover="highlightCard('#quinta')" 
+                onmouseout="highlightCard('#quinta')" id="quinta" alt="">
+
+                <img class="cards-ingressos" src="./img/sex.svg"
+                onclick="selectCard('#sexta')" 
+                onmouseover="highlightCard('#sexta')" 
+                onmouseout="highlightCard('#sexta')" id="sexta" alt="">
+
+                <img class="cards-ingressos" src="./img/sab.svg"
+                onclick="selectCard('#sabado')" 
+                onmouseover="highlightCard('#sabado')" 
+                onmouseout="highlightCard('#sabado')" id="sabado" alt="">
+
+                <img class="cards-ingressos" src="./img/dom.svg"
+                onclick="selectCard('#domingo')"
+                onmouseover="highlightCard('#domingo')" 
+                onmouseout="highlightCard('#domingo')" id="domingo" alt="">
             </div>
         </div>
         <div class="botao">
-            <button id="botao-ingresso">GARANTA O SEU!</button>
+          <button onclick="showSelectedCards()" id="botao-ingresso">GARANTA O SEU!</button>
         </div>
     </section>
 
